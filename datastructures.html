@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Data Structures</title>
+    <script>
+    // welcome to objects
+    // create an object that is a pet, car, or favorite athlete
+        let cat = {
+            Name: "",
+            Age: 1,
+            Type: "Siamese",
+            Gender: "Male",
+            Weight: 10,
+        }
+
+        function input() {
+            // Selecting the input element and get its value 
+            return document.getElementById("inputId").value;
+        }
+
+        function process(){
+            // set a variable to whatever is in the HTML field using the input function
+            // which gets the value from 'inputId'
+            cat.name = input();
+            output("the cat's name is now: " + cat.name);
+        }
+
+        function output(content) {
+            document.getElementById("display1").innerHTML = content;
+        }
+
+    </script>
+</head>
+<body>
+    <!-- this line of code holds a value input by the user; creates form field -->
+    <input type="text" placeholder="Type " id="inputId">
+    <button type="button" onclick="process();">Input</button>
+    <p>Output:</p>
+    <p id="display1">output will replace this...</p>
+</body>
+</html>
