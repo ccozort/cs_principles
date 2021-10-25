@@ -14,6 +14,45 @@
             Weight: 10,
         }
 
+        // welcome to constructors...
+        function dog(name, age){
+            this.name = name;
+            this.age = age;
+        }
+
+        // this is a class
+        class Dog{
+            constructor(name, age){
+            this.name = name;
+            this.age = age;
+            this.x = x;
+            this.y = y;
+            this.w = w;
+            this.h = h;
+            }
+            bark(){
+                console.log("WOOOOOF");
+            }
+            run(){
+
+            }
+            update(){
+
+            }
+            draw(){
+                alert
+            }
+
+        }
+
+        let myDog = new dog("Doofus", 2);
+        let yourDog = new Dog("Roofus", 4);
+        yourDog.bark();
+        console.log(myDog.name);
+        console.log(myDog.age);
+        console.log(yourDog.name);
+        console.log(yourDog.age);
+
         function input() {
             // Selecting the input element and get its value 
             return document.getElementById("inputId").value;
