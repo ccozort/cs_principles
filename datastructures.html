@@ -18,17 +18,18 @@
         function dog(name, age){
             this.name = name;
             this.age = age;
+            this.speak = function(bark){
+                console.log(bark);
+            }
         }
 
         // this is a class
         class Dog{
             constructor(name, age){
-            this.name = name;
-            this.age = age;
-            this.x = x;
-            this.y = y;
-            this.w = w;
-            this.h = h;
+                this.name = name;
+                this.age = age;
+                this.favoriteToys = ["Bone", "Stick", "Ball"];
+                this.isAlive = true;
             }
             bark(){
                 console.log("WOOOOOF");
@@ -36,22 +37,26 @@
             run(){
 
             }
-            update(){
-
-            }
-            draw(){
-                alert
-            }
 
         }
 
+        // create instance of dog constructor function
         let myDog = new dog("Doofus", 2);
+        // create instance of Dog class
         let yourDog = new Dog("Roofus", 4);
+        // call method from yourDog instance
         yourDog.bark();
+        myDog.bark("bow wow...");
         console.log(myDog.name);
         console.log(myDog.age);
         console.log(yourDog.name);
         console.log(yourDog.age);
+        console.log(yourDog.isAlive);
+        yourDog.isAlive = false;
+        console.log(yourDog.isAlive);
+        console.log(yourDog);
+        console.log(Dog);
+
 
         function input() {
             // Selecting the input element and get its value 
