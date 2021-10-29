@@ -16,7 +16,6 @@ function init() {
 // we now have just the drawing commands in the function draw
 function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-
     oneSquare.draw();
     twoSquare.draw();
 }
